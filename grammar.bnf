@@ -1,3 +1,4 @@
+/* All full notes playable on 24 fret 6 string guitar*/
 <C> ::= <C3> | <C4> | <C5> | <C6>
 <D> ::= <D3> | <D4> | <D5> | <D6>
 <E> ::= <E2> | <E3> | <E4> | <E5> | <E6>
@@ -6,12 +7,14 @@
 <A> ::= <A2> | <A3> | <A4> | <A5>
 <B> ::= <B2> | <B3> | <B4> | <B5>
 
+/* Ascending semitones (e.g. C#) playable on 24 fret 6 string guitar*/
 <C_> ::= <C_3> | <C_4> | <C_5> | <C_6>
 <D_> ::= <D_3> | <D_4> | <D_5> | <D_6>
 <F_> ::= <F_2> | <F_3> | <F_4> | <F_5>
 <G_> ::= <G_2> | <G_3> | <G_4> | <G_5>
 <A_> ::= <A_2> | <A_3> | <A_4> | <A_5>
 
+/* String positions for each note */
 <C3> ::= <s6_8> | <s5_3>
 <C4> ::= <s6_20> | <s5_15> | <s4_10> | <s3_5> | <s2_1>
 <C5> ::= <s4_22> | <s3_17> | <s2_13> | <s1_8>
@@ -73,6 +76,9 @@
 <A_4> ::= <s5_23> | <s4_18> | <s3_13> | <s2_9> | <s1_4>
 <A_5> ::= <s2_21> | <s1_16>
 
+/* output the string positions. first digit denotes string number, with 
+   string 1 on high E and string 6 on low E. the second number denotes 
+   the fret position. */
 <s0_0> ::= " 0_0"
 <s0_1> ::= " 0_1"
 <s0_2> ::= " 0_2"
@@ -256,6 +262,9 @@
 <s6_22> ::= " 6_22"
 <s6_23> ::= " 6_23"
 <s6_24> ::= " 6_24"
+
+/* now use some notes in sequence to generate possible guitar string 
+   positions, i.e. guitar tabs. */
 
 <C_major_scale_note> ::= <C> | <D> | <E> | <F> | <G> | <A> | <B>
 <C_major_chord_root> ::= <C>
