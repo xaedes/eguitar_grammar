@@ -14,7 +14,9 @@
 <G_> ::= <G_2> | <G_3> | <G_4> | <G_5>
 <A_> ::= <A_2> | <A_3> | <A_4> | <A_5>
 
-/* String positions for each note */
+/* String positions for each note. Fret number will go down by five for 
+   each string, except when going from third to second string where the 
+   fret number goes down by only four. */
 <C3> ::= <s6_8> | <s5_3>
 <C4> ::= <s6_20> | <s5_15> | <s4_10> | <s3_5> | <s2_1>
 <C5> ::= <s4_22> | <s3_17> | <s2_13> | <s1_8>
@@ -72,9 +74,9 @@
 <G_5> ::= <s2_21> | <s1_16>
 
 <A_2> ::= <s6_6> | <s5_1>
-<A_3> ::= <s6_16> | <s5_11> | <s4_6> | <s3_1>
-<A_4> ::= <s5_23> | <s4_18> | <s3_13> | <s2_9> | <s1_4>
-<A_5> ::= <s2_21> | <s1_16>
+<A_3> ::= <s6_18> | <s5_13> | <s4_8> | <s3_3>
+<A_4> ::= <s4_20> | <s3_15> | <s2_11> | <s1_6>
+<A_5> ::= <s2_23> | <s1_18>
 
 /* output the string positions. first digit denotes string number, with 
    string 1 on high E and string 6 on low E. the second number denotes 
